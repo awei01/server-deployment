@@ -1,8 +1,8 @@
 # Setting up server #
 
 ## Local development ##
-* Install (Vagrant)[http://www.vagrantup.com]
-* Install (VirtualBox)[https://www.virtualbox.org/]
+* Install [Vagrant](http://www.vagrantup.com)
+* Install [VirtualBox](https://www.virtualbox.org/)
 * cd to here
 * `vagrant up`
 * `vagrant ssh`
