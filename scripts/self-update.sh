@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-echo 'updating packages'
+echo '--------------------------'
+echo 'updating server'
+echo '--------------------------'
 aptitude update
 aptitude upgrade
 apt-get update
-echo 'updated packages'

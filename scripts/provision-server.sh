@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
 echo '--------------------------'
-echo 'bootstrapping VM'
+echo 'provision server'
 echo '--------------------------'
-. $DIR/self-update.sh
-. $DIR/config-server.sh
-. $DIR/install-git.sh
-. $DIR/provision-server.sh
+. $DIR/install-mysql.sh
+. $DIR/install-webserver.sh
+. $DIR/install-composer.sh
