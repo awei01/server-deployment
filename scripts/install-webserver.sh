@@ -9,3 +9,4 @@ apt-get install php5-curl -y
 apt-get install php5-mcrypt -y
 apt-get install php5-mysql -y
 a2enmod rewrite
+apachectl restart
