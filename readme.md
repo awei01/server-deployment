@@ -3,10 +3,11 @@
 ## Local development ##
 * Install [Vagrant](http://www.vagrantup.com)
 * Install [VirtualBox](https://www.virtualbox.org/)
-* cd to here
+* clone this repo `git clone https://github.com/awei01/server-deployment.git`
+* `cd server-deployment`
 * `vagrant up`
 * `vagrant ssh`
-* virtual box: `sudo chmod 755 /vagrant/scripts/*`
+* virtual box: `sudo chmod 755 /vagrant/scripts`
 * virtual box: `sudo /vagrant/scripts/bootstrap-vm.sh`
 
 ## Server deployment ##
