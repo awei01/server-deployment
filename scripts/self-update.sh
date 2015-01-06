@@ -4,5 +4,5 @@ echo '--------------------------'
 echo 'updating server'
 echo '--------------------------'
 aptitude update
-aptitude upgrade
+aptitude upgrade -y
 apt-get update

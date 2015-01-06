@@ -1,4 +1,18 @@
-# Setting up server #
+# Server Deployment #
+
+Set up a virtual development or server environment with the following:
+* Ubuntu 14.04.1 LTS
+* MySQL 5.5.40
+* Apache/2.4.10 (Ubuntu)
+* PHP 5.6.4-1
+
+Additional configurations for virtual environment:
+* mount local `./srv` to virtual machine's `/srv` folder
+
+Additional configurations for server deployment:
+* disable root access via ssh
+* change ssh port to 5222
+* create a new "superuser" user for ssh access
 
 ## Local development ##
 * Install [Vagrant](http://www.vagrantup.com)
