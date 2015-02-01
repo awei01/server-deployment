@@ -31,3 +31,4 @@ Additional configurations for server deployment:
 * `cd server-deployment`
 * if needed, `sudo chmod 755 scripts`
 * `sudo scripts/bootstrap-server.sh`
+* copy the aliases to superuser: `cp ~/.bash_aliases /home/superuser/`
