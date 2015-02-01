@@ -29,5 +29,5 @@ Additional configurations for server deployment:
 * `sudo apt-get install git`
 * clone this repo `git clone https://github.com/awei01/server-deployment.git`
 * `cd server-deployment`
-* `sudo chmod 755 scripts`
+* if needed, `sudo chmod 755 scripts`
 * `sudo scripts/bootstrap-server.sh`
