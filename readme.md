@@ -31,4 +31,3 @@ Additional configurations for server deployment:
 * `cd server-deployment`
 * `sudo chmod 755 scripts`
 * `sudo scripts/bootstrap-server.sh`
-* `sudo scripts/provision-server.sh`
