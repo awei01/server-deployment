@@ -2,9 +2,12 @@
 
 Set up a virtual development or server environment with the following:
 * Ubuntu 14.04.1 LTS
+
+Optional scripts available for provisioning software:
 * MySQL 5.5.40
 * Apache/2.4.10 (Ubuntu)
 * PHP 5.6.4-1
+* node, npm
 
 Additional configurations for virtual environment:
 * mount local `./srv` to virtual machine's `/srv` folder
