@@ -8,26 +8,26 @@ cat <<STOP
 STOP
 
 # install composer if it's not already there
-FILE=/usr/local/bin/composer.phar
-if [ -f $FILE ]; then
+FOLDER=/usr/local/bin/
+if [ -f $FOLDER/composer.phar ]; then
 	echo 'Composer already installed'
 else
 	echo 'Installing...'
-	curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin
+	curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=$FOLDER
 fi
 
 # see if we're on a vagrant box and determine the home file
-HOME=/home/superuser
+FOLDER=/home/superuser
 getent passwd vagrant >/dev/null 2>&1 && {
-	HOME=/home/vagrant
+	FOLDER=/home/vagrant
 }
 
-if [ ! -d $HOME ]; then
-	echo 'The home directory [' $HOME '] does not exist'
+if [ ! -d $FOLDER ]; then
+	echo 'The home directory [' $FOLDER '] does not exist'
 	return 2>/dev/null || exit 1
 fi
 
-FILE=$HOME/.bash_aliases
+FILE=$FOLDER/.bash_aliases
 if [ ! -f $FILE ]; then
 	echo 'Creating [' $FILE ']'
 	touch $FILE

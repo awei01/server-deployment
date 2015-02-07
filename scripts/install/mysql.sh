@@ -8,7 +8,7 @@ cat <<STOP
 STOP
 
 # install mysql if it isn't already installed
-hash git 2>/dev/null 2>&1 && {
+hash mysql 2>/dev/null 2>&1 && {
 	echo 'MySQL already installled'
 } || {
 	echo 'Installing...'
