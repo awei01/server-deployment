@@ -17,17 +17,17 @@ else
 fi
 
 # see if we're on a vagrant box and determine the home file
-DIR=/home/superuser
+HOME=/home/superuser
 getent passwd vagrant >/dev/null 2>&1 && {
-	DIR=/home/vagrant
+	HOME=/home/vagrant
 }
 
-if [ ! -d $DIR ]; then
-	echo 'The home directory [' $DIR '] does not exist'
-	exit 1
+if [ ! -d $HOME ]; then
+	echo 'The home directory [' $HOME '] does not exist'
+	return 2>/dev/null || exit 1
 fi
 
-FILE=$DIR/.bash_aliases
+FILE=$HOME/.bash_aliases
 if [ ! -f $FILE ]; then
 	echo 'Creating [' $FILE ']'
 	touch $FILE

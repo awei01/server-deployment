@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 cat <<STOP
 |--------------------------
 | Install PHP & Apache

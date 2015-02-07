@@ -9,7 +9,7 @@ STOP
 
 getent passwd vagrant >/dev/null 2>&1 && {
 	echo 'Not locking down SSH because this is a Vagrant installation'
-	exit 0
+	return 2>/dev/null || exit 0
 }
 
 sed -i 's/^Port .*$/Port 5222/g' /etc/ssh/sshd_config

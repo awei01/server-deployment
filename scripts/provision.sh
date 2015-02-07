@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 if [ ! $DIR ]; then
 	DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 fi
