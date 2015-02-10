@@ -23,13 +23,13 @@ getent passwd vagrant >/dev/null 2>&1 && {
 }
 
 if [ ! -d $FOLDER ]; then
-	echo 'The home directory [' $FOLDER '] does not exist'
+	echo "The home directory [ $FOLDER ] does not exist"
 	return 2>/dev/null || exit 1
 fi
 
 FILE=$FOLDER/.bash_aliases
 if [ ! -f $FILE ]; then
-	echo 'Creating [' $FILE ']'
+	echo "Creating [ $FILE ]"
 	touch $FILE
 fi
 
