@@ -14,5 +14,5 @@ STOP
 . $DIR/install/mysql.sh
 . $DIR/install/php-apache.sh
 . $DIR/install/composer.sh
-. $DIR/install/node.sh
+#. $DIR/install/node.sh
 . $DIR/install/clean.sh
