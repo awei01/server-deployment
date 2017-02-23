@@ -25,7 +25,7 @@ Additional configurations for server deployment:
 * `cd server-deployment`
 * `vagrant up`
 * `vagrant ssh`
-* From virtual box: `sudo chmod 755 /vagrant/scripts`
+* From virtual box: `sudo chmod -R 755 /vagrant/scripts`
 * From virtual box: `sudo /vagrant/scripts/start.sh`
 
 ## Server deployment ##
