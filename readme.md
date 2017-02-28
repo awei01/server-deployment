@@ -12,7 +12,6 @@ Provisioned software:
 
 Additional configurations for virtual environment:
 * Mount a local `../../work` to virtual machine's `/srv` folder in addition to the default `/vagrant` folder
-* Virtual machine's IP address set to `192.168.168.168`
 
 Additional configurations for server deployment:
 * Disable root access via ssh
@@ -24,6 +23,7 @@ Additional configurations for server deployment:
 * Install [VirtualBox](https://www.virtualbox.org/)
 * Clone this repo `git clone https://github.com/awei01/server-deployment.git`
 * `cd server-deployment`
+* Change the network settings in `Vagrantfile` as needed
 * `vagrant up`
 * `vagrant ssh`
 * From virtual box: `sudo chmod -R 755 /vagrant/scripts`
