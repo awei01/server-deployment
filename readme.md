@@ -8,31 +8,15 @@ Provisioned software:
 * Apache/2.4.10 (Ubuntu)
 * PHP 5.6.30-5+deb.sury.org~trusty+2 (cli)
 * PHP Composer dependency management tool
-* ~~ node, npm ~~ Install and manage node using https://github.com/creationix/nvm
 
-Additional configurations for virtual environment:
-* Mount a local `../../work` to virtual machine's `/srv` folder in addition to the default `/vagrant` folder
-
-Additional configurations for server deployment:
-* Disable root access via ssh
-* Change ssh port to 5222
-* Create a new "superuser:admin" user for ssh access
 
 ## Local development ##
 * Install [Vagrant](http://www.vagrantup.com)
 * Install [VirtualBox](https://www.virtualbox.org/)
-* Clone this repo `git clone https://github.com/awei01/server-deployment.git`
-* `cd server-deployment`
-* Change the network settings in `Vagrantfile` as needed
-* `vagrant up`
-* `vagrant ssh`
-* From virtual box: `sudo chmod -R 755 /vagrant/scripts`
-* From virtual box: `sudo /vagrant/scripts/provision.sh`
-
-## Server deployment ##
-* `sudo apt-get update`
-* `sudo apt-get install git`
-* Clone this repo `git clone https://github.com/awei01/server-deployment.git`
-* `cd server-deployment`
-* If needed, `sudo chmod 755 scripts`
-* `sudo scripts/start.sh`
+* Create a new folder where you want your virtual machine to be stored: `mkdir my-virtual-machine`
+* Change directory into your newly created folder: `cd my-virtual-machine`
+* Clone this repository into the folder: `git clone https://github.com/awei01/web-server.git ./`
+* Fire up the virtual machine: `vagrant up`
+* Log into your virtual machine: `vagrant ssh`
+* From virtual box, change the file modes so they can be executed: `sudo chmod -R 755 /vagrant/scripts`
+* From virtual box, execute the following script: `sudo /vagrant/scripts/provision.sh`
