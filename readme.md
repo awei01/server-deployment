@@ -20,3 +20,8 @@ Provisioned software:
 * Log into your virtual machine: `vagrant ssh`
 * From virtual box, change the file modes so they can be executed: `sudo chmod -R 755 /vagrant/scripts`
 * From virtual box, execute the following script: `sudo /vagrant/scripts/provision.sh`
+
+## Version Controlled Wordpress development
+* If not already up, fire up the virtual machine: `vagrant up`
+* If not already logged in, log into your virtual machine: `vagrant ssh`
+* From virtual box, execute the following script: `sudo /vagrant/scripts/install/wordpress-components.sh`
